@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Interactive Resume</title>
-    <link rel="stylesheet"href="style.css">
+</head>
+     <meta charset="UFT-8">
+     <meta name="viewport" content="width=device-width, initial-scal"
+     <title>Dynamic Resume  Builder</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="Resume-conatiner">
-         <!--left section-->
-           <div class="left-section">
-              <img src="profile.jpg" alt="profile picture" class="profile-picture">
-              <section id="objective">
-                <h3 style="color: white;">career objective</h3>
-                <p style="text-align: justify;hyphens: auto;">To secure an employment opportunity with a progressive organisation, where i can utillize my professional skills and knowledto the maximum add value in the growth of the organisti</p>
-              </section>
+    <h1>Dynamic Resume Builder</h1>
+     <form id="resume-form">
+       <fieldset>
+           <legend>Personal Information</legend>
+           <label for="name">Name:</label>
+           <input type="text" id="name" placeholder="Enter your name" required>
 
-              <section id="certification">
-                <h3 style="color: white;">certification</h3>
-                <p><b>CIT:</b>  From Noor Collage of professional Education</p>
-                <P><b>Artificial Intelligence, web3.0 Mataverse</b>From Governor House Karachi(Ongoing)</P>
-              </section>
-         </div>
+           <label for="email">Email:</label>
+           <input types="email" id="email" placeholder="Enter your email" required>
 
-         <!--Right Section-->
-         <div class="right- section">
-            <hl>Static Interactiven Resume</hl>
-            <!--Personal Information-->
-            <section id="Personal-info"></section>
-            <h3> Personal-informtion</h3>
-            <p><b>Name:</b>duaesehar</p>
-            <P><b>phone:</b>03102691929</P>
-            <P><b>Email:</b> <a href="mailto:duaeseharduaesehar@gmail.com">duaeseharduaesehar@gmail.com</a></P>
-          <section>
+             <label for="phone">Phone:</label>
+             <input type="phone" id="phone" placeholder="Enter your phone" required>
+       </fieldset>   
 
-            <!-- Education Section-->
-             <section id="Education">
-                <p><b>1styear:</b>pre engineering ziauddin board Karachi(2024)</p>
-                <p><b>mactric:</b>iqra publice sec. school baldiya town Karachi</p>
-                <p><b>intermediate:</b>continue<P>
-             </section>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education"> Education:</label>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+        </fieldset>
 
-             <!--Skills Section-->
-             <section id="Skill"> 
-                <h3>skills</h3>
-                <ul>
-                    <li>Statistical Analysis</li>
-                    <li>Ms office</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>javascript</li>
-                    <li>comunication skills</li>
-                </ul>
-             </section>
-             
-             <!--Work Experience Section-->
-             <section id="--Work Experience">
-                <h3>Work Experience</h3>
-                <P><b>teacher:</b> uzma school</P>
-                <p><b>Role:</b>teacher</p>
-             </section>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience"> Experience:</label>
+            <textarea id="experience" placeholder="Enter your  work experience" rows="4" required></textarea>
+        </fieldset>
 
-             <!--Botton to toggle Skills Section-->
-             <button id="toggle-skills"><b>Hide/Show Skills</b></button>
-           </div>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills"> Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button types="submit"><b> Generate Resume</b></button>
+    </form>
+
+    <br>
+
+    <!-- Dynamic Resume-->
+     <div id="resume-display">
+     <!-- Resume will be genrated below-->
      </div>
+
      <script src="script.js"></script>
- </body>
- </html>
+</body> 
+</html>   
